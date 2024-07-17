@@ -15,6 +15,7 @@ dist-ssr
 # User added
 
 venv
+__pycache__
 secrets.py
 
 # Editor directories and files

@@ -71,7 +71,7 @@ export function Dash() {
       const formData = new FormData();
       formData.append("file", selectedFile);
 
-      fetch("http://192.168.227.226:5000/transcribe", {
+      fetch("http://http://127.0.0.1:8000/transcribe", {
         method: "POST",
         body: formData,
       })
@@ -82,7 +82,7 @@ export function Dash() {
           setContent("Analayzinngg....");
 
           // Make another fetch request to localhost:8000/generate with the transcription text
-          return fetch("http://localhost:8000/generate", {
+          return fetch("http://127.0.0.1:8000/generate", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

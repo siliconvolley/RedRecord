@@ -16,7 +16,6 @@ app.add_middleware(
 )
 
 
-
 @app.post("/generate")
 async def generate(session: Session):
     return {"summary": gemini.generateSummary(session.transcript)}
@@ -30,3 +29,7 @@ async def randomQuestion(contents: PreviousContent):
 @app.get("/hello/{name}")
 async def say_hello(name: str):
     return {"message": f"Hello {name}"}
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the server of ARC-AI"}
