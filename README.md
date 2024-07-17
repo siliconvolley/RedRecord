@@ -32,7 +32,7 @@ cd client && npm run dev
 
 ## NOTE:
 
-- In `server/` directory, create a `secrets.py` file and add the following content,
+- In `server/` directory, create a `secrets.py` file and add your Gemini API Key,
 
 ```python
 GEMINI_API = '<YOUR_GEMINI_API_KEY>'
